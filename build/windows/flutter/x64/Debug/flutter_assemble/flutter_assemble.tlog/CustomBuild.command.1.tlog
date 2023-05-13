@@ -1,0 +1,28 @@
+^D:\FLUTTER PROJECTS\CHATGPT_APP\BUILD\WINDOWS\CMAKEFILES\8470897B2F48064DE4CF2562850EE787\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\Downloads\flutter_windows_3.7.10-stable\flutter "PROJECT_DIR=D:\Flutter Projects\chatgpt_app" FLUTTER_ROOT=D:\Downloads\flutter_windows_3.7.10-stable\flutter "FLUTTER_EPHEMERAL_DIR=D:\Flutter Projects\chatgpt_app\windows\flutter\ephemeral" "PROJECT_DIR=D:\Flutter Projects\chatgpt_app" "FLUTTER_TARGET=D:\Flutter Projects\chatgpt_app\lib\main.dart" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=D:\Flutter Projects\chatgpt_app\.dart_tool\package_config.json" D:/Downloads/flutter_windows_3.7.10-stable/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\FLUTTER PROJECTS\CHATGPT_APP\BUILD\WINDOWS\CMAKEFILES\584AE866ADF423AE06AB796AFE4B88E0\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\FLUTTER PROJECTS\CHATGPT_APP\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/Flutter Projects/chatgpt_app/windows" "-BD:/Flutter Projects/chatgpt_app/build/windows" --check-stamp-file "D:/Flutter Projects/chatgpt_app/build/windows/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

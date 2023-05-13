@@ -84,7 +84,7 @@ class _ChatScreenState extends State<ChatScreen> {
             if (_isTyping) ...[
               const SpinKitFoldingCube(
                 color: Colors.white,
-                size: 22,
+                size: 20,
               ),
               const SizedBox(
                 height: 17,

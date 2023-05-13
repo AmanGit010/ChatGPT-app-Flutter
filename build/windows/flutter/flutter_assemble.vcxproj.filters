@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Flutter Projects\chatgpt_app\build\windows\CMakeFiles\8470897b2f48064de4cf2562850ee787\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Flutter Projects\chatgpt_app\build\windows\CMakeFiles\584ae866adf423ae06ab796afe4b88e0\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Flutter Projects\chatgpt_app\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Flutter Projects\chatgpt_app\build\windows\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DA3BA6B7-E040-3A00-91E6-380E36485EF6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

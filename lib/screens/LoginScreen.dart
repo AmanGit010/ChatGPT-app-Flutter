@@ -1,3 +1,4 @@
+import 'package:chatgpt_app/const.dart';
 import 'package:chatgpt_app/screens/ChatScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -48,48 +49,58 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontSize: 20),
               ),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
-              ActionChip(
-                backgroundColor: Color(0xFF10a37f),
-                label: Text("Log in"),
-                onPressed: () {
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ChatScreen(),
-                      ));
-                },
-              ),
-              Material(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                // borderRadius: BorderRadius.circular(changebutton ? 20 : 7),
-                // child: MaterialButton(onPressed: () {
-                //   signIn(emailcontroller.text, passwordcontroller.text);
-                // }),
-                child: InkWell(
-                  onTap: () {
-                    // signIn(emailcontroller.text, passwordcontroller.text);
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    margin: const EdgeInsets.symmetric(horizontal: 25),
-                    // duration: const Duration(seconds: 1),
-                    //button
-                    // width: changebutton ? 60 : 110,
-                    // height: 40,
-                    alignment: Alignment.center,
-
-                    child: const Text(
-                      "Login",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
+              Padding(
+                padding: const EdgeInsets.only(left: 110),
+                child: Row(
+                  children: [
+                    Material(
+                      color: green,
+                      borderRadius: BorderRadius.circular(5),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 15),
+                          alignment: Alignment.center,
+                          width: 60,
+                          height: 50,
+                          child: const Text(
+                            "Log in",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Material(
+                      color: green,
+                      borderRadius: BorderRadius.circular(5),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(horizontal: 15),
+                          alignment: Alignment.center,
+                          width: 60,
+                          height: 50,
+                          child: const Text(
+                            "Sign up",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               )
             ],
