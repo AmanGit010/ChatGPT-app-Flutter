@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.w500),
               ),
               const SizedBox(
                 height: 15,
@@ -45,64 +45,62 @@ class _LoginScreenState extends State<LoginScreen> {
                 "Log in with your OpenAI account to continue",
                 style: TextStyle(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                     fontSize: 20),
               ),
               const SizedBox(
                 height: 20,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 110),
-                child: Row(
-                  children: [
-                    Material(
-                      color: green,
-                      borderRadius: BorderRadius.circular(5),
-                      child: InkWell(
-                        onTap: () {},
-                        child: Container(
-                          margin: const EdgeInsets.symmetric(horizontal: 15),
-                          alignment: Alignment.center,
-                          width: 60,
-                          height: 50,
-                          child: const Text(
-                            "Log in",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Material(
+                    color: green,
+                    borderRadius: BorderRadius.circular(5),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 15),
+                        alignment: Alignment.center,
+                        width: 50,
+                        height: 45,
+                        child: const Text(
+                          "Log in",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
                           ),
                         ),
                       ),
                     ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Material(
-                      color: green,
-                      borderRadius: BorderRadius.circular(5),
-                      child: InkWell(
-                        onTap: () {},
-                        child: Container(
-                          margin: const EdgeInsets.symmetric(horizontal: 15),
-                          alignment: Alignment.center,
-                          width: 60,
-                          height: 50,
-                          child: const Text(
-                            "Sign up",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
-                            ),
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Material(
+                    color: green,
+                    borderRadius: BorderRadius.circular(5),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 15),
+                        alignment: Alignment.center,
+                        width: 50,
+                        height: 45,
+                        child: const Text(
+                          "Sign up",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
                           ),
                         ),
                       ),
                     ),
-                  ],
-                ),
-              )
+                  ),
+                ],
+              ),
             ],
           ),
         ),

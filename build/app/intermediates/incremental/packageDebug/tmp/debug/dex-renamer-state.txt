@@ -1,4 +1,4 @@
-#Sat May 13 19:59:06 IST 2023
-base.0=D\:\\Flutter Projects\\chatgpt_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Sun May 14 15:37:44 IST 2023
+base.0=D\:\\Flutter Projects\\ChatGPT-app-Flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

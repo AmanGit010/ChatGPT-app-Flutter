@@ -4,7 +4,7 @@
             "outputFile": "com.example.chatgpt_app-mergeDebugResources-9:/values/values.xml",
             "map": [
                 {
-                    "source": "D:\\Flutter Projects\\chatgpt_app\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\Flutter Projects\\ChatGPT-app-Flutter\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
