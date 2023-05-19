@@ -1,0 +1,39 @@
+<variant
+    name="release"
+    package="com.example.chatgpt_app"
+    minSdkVersion="16"
+    targetSdkVersion="33"
+    shrinking="true"
+    mergedManifest="D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\merged_manifest\release\AndroidManifest.xml"
+    proguardFiles="D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\default_proguard_files\global\proguard-android.txt-7.2.0;D:\Downloads\flutter_windows_3.7.10-stable\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro;proguard-rules.pro"
+    partialResultsDir="D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\lint_vital_partial_results\release\out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifest="src\main\AndroidManifest.xml"
+        javaDirectories="src\main\java;src\main\kotlin"
+        resDirectories="src\main\res"
+        assetsDirectories="src\main\assets"/>
+    <sourceProvider
+        manifest="src\release\AndroidManifest.xml"
+        javaDirectories="src\release\java;src\release\kotlin"
+        resDirectories="src\release\res"
+        assetsDirectories="src\release\assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\javac\release\classes;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\tmp\kotlin-classes\release;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\kotlinToolingMetadata;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\compile_and_runtime_not_namespaced_r_class_jar\release\R.jar"
+      applicationId="com.example.chatgpt_app"
+      generatedSourceFolders="D:\Flutter Projects\ChatGPT-app-Flutter\build\app\generated\source\buildConfig\release;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\generated\aidl_source_output_dir\release\out;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\generated\renderscript_source_output_dir\release\out;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\generated\ap_generated_sources\release\out"
+      generatedResourceFolders="D:\Flutter Projects\ChatGPT-app-Flutter\build\app\generated\res\rs\release;D:\Flutter Projects\ChatGPT-app-Flutter\build\app\generated\res\resValues\release">
+  </mainArtifact>
+</variant>
