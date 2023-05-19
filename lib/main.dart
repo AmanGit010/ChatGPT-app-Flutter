@@ -2,6 +2,7 @@ import 'package:chatgpt_app/Utils/Routes.dart';
 import 'package:chatgpt_app/const.dart';
 import 'package:chatgpt_app/screens/ChatScreen.dart';
 import 'package:chatgpt_app/screens/LoginScreen.dart';
+import 'package:chatgpt_app/screens/homePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,9 +24,10 @@ class _MyappState extends State<Myapp> {
       theme: ThemeData(
         scaffoldBackgroundColor: scaffoldBackgroundColor,
       ),
-      initialRoute: Routes.login,
+      initialRoute: Routes.home,
       routes: {
-        '/login': (context) => LoginScreen(),
+        '/home': (context) => HomePage(),
+        'login': (context) => LoginScreen(),
         '/chat': (context) => ChatScreen(),
       },
       home: const ChatScreen(),
