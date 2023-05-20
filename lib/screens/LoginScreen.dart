@@ -1,4 +1,5 @@
 import 'package:chatgpt_app/const.dart';
+import 'package:chatgpt_app/screens/homePage.dart';
 import 'package:flutter/material.dart';
 import 'package:chatgpt_app/Utils/Routes.dart';
 
@@ -30,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 40,
+                  height: 35,
                 ),
                 const Text(
                   "Welcome Back",
@@ -40,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 18,
                 ),
                 //Email and password textformfields
                 Form(
@@ -132,17 +133,141 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    elevation: 10,
                     backgroundColor: green,
-                    padding:
-                        EdgeInsets.symmetric(vertical: 20, horizontal: 162),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 155),
                   ),
                   onPressed: () {},
-                  child: Text("Continue"),
+                  child: const Text(
+                    "Continue",
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
-                Text("Don't have an account? ")
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text("Don't have an account? "),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => HomePage(),
+                        ));
+                      },
+                      child: Text(
+                        "Sign up",
+                        style: TextStyle(
+                            color: green, fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Expanded(
+                      child: Divider(
+                        // thickness: 1,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "OR",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Expanded(
+                      child: Divider(
+                        // thickness: 1,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    elevation: 5,
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 60),
+                    backgroundColor: Colors.white,
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ));
+                  },
+                  child: Wrap(
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Image.asset(
+                        "images/google.png",
+                        // scale: 2,
+                        width: 30,
+                        height: 30,
+                      ),
+                      const SizedBox(
+                        width: 40,
+                      ),
+                      const Text(
+                        "Continue with Google",
+                        style: TextStyle(fontSize: 16, color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    elevation: 5,
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 60),
+                    backgroundColor: Colors.white,
+                  ),
+                  onPressed: () {},
+                  child: Wrap(
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    children: [
+                      Image.asset(
+                        "images/github.png",
+                        // scale: 2,
+                        width: 30,
+                        height: 30,
+                      ),
+                      const SizedBox(
+                        width: 40,
+                      ),
+                      const Text(
+                        "Continue with GitHub",
+                        style: TextStyle(fontSize: 16, color: Colors.black),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 40,
+                )
               ],
             ),
           ),

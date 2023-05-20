@@ -1686,6 +1686,7 @@ io.flutter.app.FlutterPluginRegistry$FlutterRegistrar
 io.flutter.app.FlutterPluginRegistry
 io.flutter.embedding.android.AndroidTouchProcessor$PointerChange
 io.flutter.embedding.android.AndroidTouchProcessor$PointerDeviceKind
+io.flutter.embedding.android.AndroidTouchProcessor$PointerPreferredStylusAuxiliaryAction
 io.flutter.embedding.android.AndroidTouchProcessor$PointerSignalKind
 io.flutter.embedding.android.AndroidTouchProcessor:
     static final int BYTES_PER_FIELD
@@ -1694,6 +1695,7 @@ io.flutter.embedding.android.AndroidTouchProcessor:
 io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView:
     public void <init>(android.content.Context,android.util.AttributeSet)
 io.flutter.embedding.android.FlutterActivity$CachedEngineIntentBuilder
+io.flutter.embedding.android.FlutterActivity$NewEngineInGroupIntentBuilder
 io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder
 io.flutter.embedding.android.FlutterActivity:
     private static final java.lang.String TAG
@@ -1703,6 +1705,7 @@ io.flutter.embedding.android.FlutterActivity:
     public void updateSystemUiOverlays()
     public static io.flutter.embedding.android.FlutterActivity$CachedEngineIntentBuilder withCachedEngine(java.lang.String)
     public static io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder withNewEngine()
+    public static io.flutter.embedding.android.FlutterActivity$NewEngineInGroupIntentBuilder withNewEngineInGroup(java.lang.String)
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$DelegateFactory
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host:
     public abstract io.flutter.embedding.android.ExclusiveAppComponent getExclusiveAppComponent()
@@ -1719,8 +1722,10 @@ io.flutter.embedding.android.FlutterFragment$1
 io.flutter.embedding.android.FlutterFragment$ActivityCallThrough
 io.flutter.embedding.android.FlutterFragment$CachedEngineFragmentBuilder
 io.flutter.embedding.android.FlutterFragment$NewEngineFragmentBuilder
+io.flutter.embedding.android.FlutterFragment$NewEngineInGroupFragmentBuilder
 io.flutter.embedding.android.FlutterFragment
 io.flutter.embedding.android.FlutterFragmentActivity$CachedEngineIntentBuilder
+io.flutter.embedding.android.FlutterFragmentActivity$NewEngineInGroupIntentBuilder
 io.flutter.embedding.android.FlutterFragmentActivity$NewEngineIntentBuilder
 io.flutter.embedding.android.FlutterFragmentActivity
 io.flutter.embedding.android.FlutterImageView:
@@ -1779,7 +1784,7 @@ io.flutter.embedding.engine.FlutterEngine:
     public void <init>(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader,io.flutter.embedding.engine.FlutterJNI,java.lang.String[],boolean)
     public void <init>(android.content.Context,java.lang.String[])
     public void <init>(android.content.Context,java.lang.String[],boolean)
-    public void addEngineLifecycleListener(io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener)
+    public void <init>(android.content.Context,java.lang.String[],boolean,boolean)
     public io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverControlSurface getBroadcastReceiverControlSurface()
     public io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface getContentProviderControlSurface()
     public io.flutter.embedding.engine.systemchannels.DeferredComponentChannel getDeferredComponentChannel()
@@ -1787,7 +1792,6 @@ io.flutter.embedding.engine.FlutterEngine:
     public io.flutter.embedding.engine.plugins.PluginRegistry getPlugins()
     public io.flutter.embedding.engine.plugins.service.ServiceControlSurface getServiceControlSurface()
     public void removeEngineLifecycleListener(io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener)
-    io.flutter.embedding.engine.FlutterEngine spawn(android.content.Context,io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint,java.lang.String,java.util.List,io.flutter.plugin.platform.PlatformViewsController,boolean,boolean)
 io.flutter.embedding.engine.FlutterEngineCache:
     public void clear()
     public boolean contains(java.lang.String)
@@ -1836,9 +1840,18 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
     public boolean has(java.lang.Class)
     public void onMoveToBackground()
     public void onMoveToForeground()
-io.flutter.embedding.engine.FlutterEngineGroup$1
-io.flutter.embedding.engine.FlutterEngineGroup$Options
-io.flutter.embedding.engine.FlutterEngineGroup
+io.flutter.embedding.engine.FlutterEngineGroup$Options:
+    public io.flutter.embedding.engine.FlutterEngineGroup$Options setPlatformViewsController(io.flutter.plugin.platform.PlatformViewsController)
+io.flutter.embedding.engine.FlutterEngineGroup:
+    public void <init>(android.content.Context)
+    public io.flutter.embedding.engine.FlutterEngine createAndRunDefaultEngine(android.content.Context)
+    public io.flutter.embedding.engine.FlutterEngine createAndRunEngine(android.content.Context,io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint)
+    public io.flutter.embedding.engine.FlutterEngine createAndRunEngine(android.content.Context,io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint,java.lang.String)
+io.flutter.embedding.engine.FlutterEngineGroupCache:
+    public void clear()
+    public boolean contains(java.lang.String)
+    public void put(java.lang.String,io.flutter.embedding.engine.FlutterEngineGroup)
+    public void remove(java.lang.String)
 io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_CACHE_SKSL
     public static final java.lang.String ARG_DART_FLAGS
@@ -1847,6 +1860,7 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_ENABLE_DART_PROFILING
     public static final java.lang.String ARG_ENABLE_IMPELLER
     public static final java.lang.String ARG_ENABLE_SOFTWARE_RENDERING
+    public static final java.lang.String ARG_ENABLE_VULKAN_VALIDATION
     public static final java.lang.String ARG_ENDLESS_TRACE_BUFFER
     public static final java.lang.String ARG_KEY_CACHE_SKSL
     public static final java.lang.String ARG_KEY_DART_FLAGS
@@ -1855,6 +1869,7 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_KEY_ENABLE_DART_PROFILING
     public static final java.lang.String ARG_KEY_ENABLE_IMPELLER
     public static final java.lang.String ARG_KEY_ENABLE_SOFTWARE_RENDERING
+    public static final java.lang.String ARG_KEY_ENABLE_VULKAN_VALIDATION
     public static final java.lang.String ARG_KEY_ENDLESS_TRACE_BUFFER
     public static final java.lang.String ARG_KEY_MSAA_SAMPLES
     public static final java.lang.String ARG_KEY_OBSERVATORY_PORT
@@ -1867,8 +1882,8 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_KEY_TRACE_SYSTRACE
     public static final java.lang.String ARG_KEY_USE_TEST_FONTS
     public static final java.lang.String ARG_KEY_VERBOSE_LOGGING
+    public static final java.lang.String ARG_KEY_VM_SERVICE_PORT
     public static final java.lang.String ARG_MSAA_SAMPLES
-    public static final java.lang.String ARG_OBSERVATORY_PORT
     public static final java.lang.String ARG_PURGE_PERSISTENT_CACHE
     public static final java.lang.String ARG_SKIA_DETERMINISTIC_RENDERING
     public static final java.lang.String ARG_START_PAUSED
@@ -1878,13 +1893,12 @@ io.flutter.embedding.engine.FlutterShellArgs:
     public static final java.lang.String ARG_TRACE_SYSTRACE
     public static final java.lang.String ARG_USE_TEST_FONTS
     public static final java.lang.String ARG_VERBOSE_LOGGING
+    public static final java.lang.String ARG_VM_SERVICE_PORT
     public void <init>(java.util.Set)
     public void <init>(java.lang.String[])
     public void add(java.lang.String)
     public void remove(java.lang.String)
 io.flutter.embedding.engine.dart.DartExecutor$DartCallback
-io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint:
-    public static io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint createDefault()
 io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger:
     public void disableBufferingIncomingMessages()
     public void enableBufferingIncomingMessages()
@@ -1940,7 +1954,6 @@ io.flutter.embedding.engine.loader.FlutterLoader:
     private static final java.lang.String DEFAULT_KERNEL_BLOB
     private static final java.lang.String DEFAULT_LIBRARY
     private static final java.lang.String ENABLE_IMPELLER_META_DATA_KEY
-    private static final java.lang.String ENABLE_SKPARAGRAPH_META_DATA_KEY
     static final java.lang.String FLUTTER_ASSETS_DIR_KEY
     static final java.lang.String ISOLATE_SNAPSHOT_DATA_KEY
     private static final java.lang.String LEAK_VM_META_DATA_KEY
@@ -1954,7 +1967,6 @@ io.flutter.embedding.engine.loader.FlutterLoader:
     private java.lang.String fullAssetPathFrom(java.lang.String)
     public java.lang.String getLookupKeyForAsset(java.lang.String)
     public java.lang.String getLookupKeyForAsset(java.lang.String,java.lang.String)
-    public boolean initialized()
     private synthetic void lambda$ensureInitializationCompleteAsync$0(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)
     private synthetic void lambda$ensureInitializationCompleteAsync$1(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)
 io.flutter.embedding.engine.loader.ResourceExtractor$1
@@ -1999,6 +2011,7 @@ io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets:
 io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
     public android.content.Context getApplicationContext()
     public io.flutter.plugin.common.BinaryMessenger getBinaryMessenger()
+    public io.flutter.embedding.engine.FlutterEngineGroup getEngineGroup()
     public io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets getFlutterAssets()
     public io.flutter.embedding.engine.FlutterEngine getFlutterEngine()
     public io.flutter.plugin.platform.PlatformViewRegistry getPlatformViewRegistry()
@@ -2071,6 +2084,7 @@ io.flutter.embedding.engine.systemchannels.MouseCursorChannel:
     public void synthesizeMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result)
 io.flutter.embedding.engine.systemchannels.NavigationChannel:
     private static final java.lang.String TAG
+    public void pushRoute(java.lang.String)
     public void setMethodCallHandler(io.flutter.plugin.common.MethodChannel$MethodCallHandler)
 io.flutter.embedding.engine.systemchannels.PlatformChannel:
     private static final java.lang.String TAG
@@ -2206,6 +2220,7 @@ io.flutter.plugin.platform.PlatformViewWrapper:
     public android.graphics.SurfaceTexture getTexture()
 io.flutter.plugin.platform.PlatformViewsController:
     private static final java.lang.String TAG
+    public android.util.SparseArray getOverlayLayerViews()
 io.flutter.plugin.platform.SingleViewPresentation$WindowManagerHandler:
     private static final java.lang.String TAG
 io.flutter.plugin.platform.VirtualDisplayController:

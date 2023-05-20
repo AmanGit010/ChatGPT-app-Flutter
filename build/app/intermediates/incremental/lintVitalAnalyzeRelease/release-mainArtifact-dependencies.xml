@@ -1,11 +1,11 @@
 <dependencies>
   <compile
-      roots="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,io.flutter:flutter_embedding_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar,io.flutter:armeabi_v7a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,io.flutter:arm64_v8a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,io.flutter:x86_64_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar,org.jetbrains:annotations:13.0@jar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.fragment:fragment:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.6.0@aar,androidx.core:core:1.6.0@aar,androidx.lifecycle:lifecycle-runtime:2.2.0@aar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.2.0@jar,androidx.arch.core:core-runtime:2.0.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,androidx.annotation:annotation:1.2.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar,androidx.tracing:tracing:1.0.0@aar">
+      roots="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,io.flutter:flutter_embedding_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar,io.flutter:armeabi_v7a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,io.flutter:arm64_v8a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,io.flutter:x86_64_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar,org.jetbrains:annotations:13.0@jar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.fragment:fragment:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.6.0@aar,androidx.core:core:1.6.0@aar,androidx.lifecycle:lifecycle-runtime:2.2.0@aar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.2.0@jar,androidx.arch.core:core-runtime:2.0.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,androidx.annotation:annotation:1.2.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar,androidx.tracing:tracing:1.0.0@aar">
     <dependency
         name="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
         simpleName="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar"/>
     <dependency
-        name="io.flutter:flutter_embedding_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:flutter_embedding_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:flutter_embedding_release"/>
     <dependency
         name="androidx.window:window-java:1.0.0-beta04@aar"
@@ -26,13 +26,13 @@
         name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk7"/>
     <dependency
-        name="io.flutter:armeabi_v7a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:armeabi_v7a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:armeabi_v7a_release"/>
     <dependency
-        name="io.flutter:arm64_v8a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:arm64_v8a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:arm64_v8a_release"/>
     <dependency
-        name="io.flutter:x86_64_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:x86_64_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:x86_64_release"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"
@@ -105,12 +105,12 @@
         simpleName="androidx.tracing:tracing"/>
   </compile>
   <package
-      roots="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,io.flutter:flutter_embedding_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar,io.flutter:armeabi_v7a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,io.flutter:arm64_v8a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,io.flutter:x86_64_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar,org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.fragment:fragment:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.6.0@aar,androidx.core:core:1.6.0@aar,androidx.lifecycle:lifecycle-runtime:2.2.0@aar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.2.0@jar,androidx.tracing:tracing:1.0.0@aar,androidx.arch.core:core-runtime:2.0.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,androidx.annotation:annotation:1.2.0@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar,org.jetbrains:annotations:13.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar">
+      roots="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar:unspecified@jar,io.flutter:flutter_embedding_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,androidx.window:window-java:1.0.0-beta04@aar,androidx.window:window:1.0.0-beta04@aar,org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2@jar,org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30@jar,org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar,io.flutter:armeabi_v7a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,io.flutter:arm64_v8a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,io.flutter:x86_64_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar,org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar,androidx.lifecycle:lifecycle-common-java8:2.2.0@jar,androidx.fragment:fragment:1.1.0@aar,androidx.viewpager:viewpager:1.0.0@aar,androidx.loader:loader:1.0.0@aar,androidx.activity:activity:1.0.0@aar,androidx.customview:customview:1.0.0@aar,androidx.core:core:1.6.0@aar,androidx.core:core:1.6.0@aar,androidx.lifecycle:lifecycle-runtime:2.2.0@aar,androidx.savedstate:savedstate:1.0.0@aar,androidx.lifecycle:lifecycle-livedata:2.0.0@aar,androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar,androidx.lifecycle:lifecycle-common:2.2.0@jar,androidx.tracing:tracing:1.0.0@aar,androidx.arch.core:core-runtime:2.0.0@aar,androidx.arch.core:core-common:2.1.0@jar,androidx.versionedparcelable:versionedparcelable:1.1.1@aar,androidx.collection:collection:1.1.0@jar,androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar,androidx.annotation:annotation:1.2.0@jar,org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar,org.jetbrains:annotations:13.0@jar,androidx.annotation:annotation-experimental:1.1.0@aar">
     <dependency
         name="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar:unspecified@jar"
         simpleName="__local_aars__:D:\Flutter Projects\ChatGPT-app-Flutter\build\app\intermediates\flutter\release\libs.jar"/>
     <dependency
-        name="io.flutter:flutter_embedding_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:flutter_embedding_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:flutter_embedding_release"/>
     <dependency
         name="androidx.window:window-java:1.0.0-beta04@aar"
@@ -131,13 +131,13 @@
         name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar"
         simpleName="org.jetbrains.kotlin:kotlin-stdlib-jdk7"/>
     <dependency
-        name="io.flutter:armeabi_v7a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:armeabi_v7a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:armeabi_v7a_release"/>
     <dependency
-        name="io.flutter:arm64_v8a_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:arm64_v8a_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:arm64_v8a_release"/>
     <dependency
-        name="io.flutter:x86_64_release:1.0.0-ec975089acb540fc60752606a3d3ba809dd1528b@jar"
+        name="io.flutter:x86_64_release:1.0.0-b4fb11214dd2dda6ce012dd98ea498e9e8b91262@jar"
         simpleName="io.flutter:x86_64_release"/>
     <dependency
         name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"

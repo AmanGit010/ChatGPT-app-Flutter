@@ -3,8 +3,8 @@
 # min_api: 16
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.0"}
-# pg_map_id: dcbd5e0
-# pg_map_hash: SHA-256 dcbd5e0871706b5a28968ee5ac22d9148c29b090c362e1a68a59d47542c5f807
+# pg_map_id: 4a16e78
+# pg_map_hash: SHA-256 4a16e7879b659efc48fa34e2790e0cb8768c550c4be06744ba5f9e1a68f1dee2
 androidx.activity.Cancellable -> androidx.activity.a:
 androidx.activity.ComponentActivity$2 -> androidx.activity.ComponentActivity$2:
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> g
@@ -23,7 +23,7 @@ androidx.activity.OnBackPressedDispatcher$LifecycleOnBackPressedCancellable -> a
     androidx.activity.Cancellable mCurrentCancellable -> b
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> g
 androidx.activity.OnBackPressedDispatcherOwner -> androidx.activity.b:
-    androidx.activity.OnBackPressedDispatcher getOnBackPressedDispatcher() -> i
+    androidx.activity.OnBackPressedDispatcher getOnBackPressedDispatcher() -> j
 androidx.arch.core.internal.FastSafeIterableMap -> a.a:
     java.util.HashMap mHashMap -> h
     androidx.arch.core.internal.SafeIterableMap$Entry get(java.lang.Object) -> c
@@ -311,7 +311,7 @@ androidx.savedstate.SavedStateRegistry -> androidx.savedstate.a:
 androidx.savedstate.SavedStateRegistry$1 -> androidx.savedstate.SavedStateRegistry$1:
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> g
 androidx.savedstate.SavedStateRegistryOwner -> androidx.savedstate.b:
-    androidx.savedstate.SavedStateRegistry getSavedStateRegistry() -> j
+    androidx.savedstate.SavedStateRegistry getSavedStateRegistry() -> k
 androidx.tracing.Trace -> h.a:
     java.lang.reflect.Method sAsyncTraceEndMethod -> c
     long sTraceTagApp -> a
@@ -598,50 +598,52 @@ io.flutter.embedding.android.FlutterActivity -> io.flutter.embedding.android.d:
     io.flutter.embedding.android.FlutterActivityAndFragmentDelegate delegate -> a
     int FLUTTER_VIEW_ID -> d
     androidx.lifecycle.LifecycleRegistry lifecycle -> b
-    java.lang.String getDartEntrypointLibraryUri() -> A
-    io.flutter.plugin.platform.PlatformPlugin providePlatformPlugin(android.app.Activity,io.flutter.embedding.engine.FlutterEngine) -> B
-    void onFlutterSurfaceViewCreated(io.flutter.embedding.android.FlutterSurfaceView) -> C
-    void configureStatusBarForFullscreenFlutterExperience() -> D
-    void configureWindowForTransparency() -> E
-    android.view.View createFlutterView() -> F
-    io.flutter.embedding.android.FlutterActivityLaunchConfigs$BackgroundMode getBackgroundMode() -> G
-    io.flutter.embedding.engine.FlutterEngine getFlutterEngine() -> H
-    android.os.Bundle getMetaData() -> I
-    android.graphics.drawable.Drawable getSplashScreenFromManifest() -> J
-    boolean isDebuggable() -> K
-    void registerOnBackInvokedCallback() -> L
-    void release() -> M
-    boolean stillAttachedForEvent(java.lang.String) -> N
-    void switchLaunchThemeForNormalTheme() -> O
-    void unregisterOnBackInvokedCallback() -> P
+    io.flutter.embedding.android.SplashScreen provideSplashScreen() -> A
+    java.lang.String getDartEntrypointLibraryUri() -> B
+    io.flutter.plugin.platform.PlatformPlugin providePlatformPlugin(android.app.Activity,io.flutter.embedding.engine.FlutterEngine) -> C
+    void onFlutterSurfaceViewCreated(io.flutter.embedding.android.FlutterSurfaceView) -> D
+    void configureStatusBarForFullscreenFlutterExperience() -> E
+    void configureWindowForTransparency() -> F
+    android.view.View createFlutterView() -> G
+    io.flutter.embedding.android.FlutterActivityLaunchConfigs$BackgroundMode getBackgroundMode() -> H
+    io.flutter.embedding.engine.FlutterEngine getFlutterEngine() -> I
+    android.os.Bundle getMetaData() -> J
+    android.graphics.drawable.Drawable getSplashScreenFromManifest() -> K
+    boolean isDebuggable() -> L
+    void registerOnBackInvokedCallback() -> M
+    void release() -> N
+    boolean stillAttachedForEvent(java.lang.String) -> O
+    void switchLaunchThemeForNormalTheme() -> P
+    void unregisterOnBackInvokedCallback() -> Q
     void detachFromFlutterEngine() -> a
     boolean popSystemNavigator() -> b
     void onFlutterUiDisplayed() -> c
     androidx.lifecycle.Lifecycle getLifecycle() -> d
     void onFlutterUiNoLongerDisplayed() -> e
     android.app.Activity getActivity() -> f
-    java.lang.String getInitialRoute() -> g
-    io.flutter.embedding.engine.FlutterShellArgs getFlutterShellArgs() -> h
-    java.lang.String getAppBundlePath() -> k
-    java.util.List getDartEntrypointArgs() -> l
-    io.flutter.embedding.engine.FlutterEngine provideFlutterEngine(android.content.Context) -> m
-    boolean shouldAttachEngineToActivity() -> n
-    io.flutter.embedding.android.RenderMode getRenderMode() -> o
-    boolean shouldDestroyEngineWithHost() -> p
-    boolean shouldHandleDeeplinking() -> q
-    io.flutter.embedding.android.TransparencyMode getTransparencyMode() -> r
-    boolean shouldDispatchAppLifecycleState() -> s
-    void onFlutterTextureViewCreated(io.flutter.embedding.android.FlutterTextureView) -> t
-    java.lang.String getCachedEngineId() -> u
-    void configureFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> v
-    boolean shouldRestoreAndSaveState() -> w
-    java.lang.String getDartEntrypointFunctionName() -> x
-    void cleanUpFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> y
-    io.flutter.embedding.android.SplashScreen provideSplashScreen() -> z
+    java.lang.String getCachedEngineGroupId() -> g
+    java.lang.String getInitialRoute() -> h
+    io.flutter.embedding.engine.FlutterShellArgs getFlutterShellArgs() -> i
+    java.lang.String getAppBundlePath() -> l
+    java.util.List getDartEntrypointArgs() -> m
+    io.flutter.embedding.engine.FlutterEngine provideFlutterEngine(android.content.Context) -> n
+    boolean shouldAttachEngineToActivity() -> o
+    io.flutter.embedding.android.RenderMode getRenderMode() -> p
+    boolean shouldDestroyEngineWithHost() -> q
+    boolean shouldHandleDeeplinking() -> r
+    io.flutter.embedding.android.TransparencyMode getTransparencyMode() -> s
+    boolean shouldDispatchAppLifecycleState() -> t
+    void onFlutterTextureViewCreated(io.flutter.embedding.android.FlutterTextureView) -> u
+    java.lang.String getCachedEngineId() -> v
+    void configureFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> w
+    boolean shouldRestoreAndSaveState() -> x
+    java.lang.String getDartEntrypointFunctionName() -> y
+    void cleanUpFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> z
 io.flutter.embedding.android.FlutterActivity$1 -> io.flutter.embedding.android.d$a:
     io.flutter.embedding.android.FlutterActivity this$0 -> a
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate -> io.flutter.embedding.android.e:
-    io.flutter.embedding.engine.renderer.FlutterUiDisplayListener flutterUiDisplayListener -> k
+    io.flutter.embedding.engine.renderer.FlutterUiDisplayListener flutterUiDisplayListener -> l
+    io.flutter.embedding.engine.FlutterEngineGroup engineGroup -> k
     boolean isAttached -> i
     io.flutter.plugin.platform.PlatformPlugin platformPlugin -> d
     android.view.ViewTreeObserver$OnPreDrawListener activePreDrawListener -> e
@@ -652,40 +654,41 @@ io.flutter.embedding.android.FlutterActivityAndFragmentDelegate -> io.flutter.em
     boolean isFlutterUiDisplayed -> g
     io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host host -> a
     boolean isFirstFrameRendered -> h
-    void onSaveInstanceState(android.os.Bundle) -> A
-    void onStart() -> B
-    void onStop() -> C
-    void onTrimMemory(int) -> D
-    void onUserLeaveHint() -> E
-    void release() -> F
-    void setupFlutterEngine() -> G
-    void updateSystemUiOverlays() -> H
+    void onResume() -> A
+    void onSaveInstanceState(android.os.Bundle) -> B
+    void onStart() -> C
+    void onStop() -> D
+    void onTrimMemory(int) -> E
+    void onUserLeaveHint() -> F
+    void release() -> G
+    void setupFlutterEngine() -> H
+    void updateSystemUiOverlays() -> I
     void detachFromFlutterEngine() -> a
     java.lang.Object getAppComponent() -> b
     io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host access$000(io.flutter.embedding.android.FlutterActivityAndFragmentDelegate) -> c
     boolean access$100(io.flutter.embedding.android.FlutterActivityAndFragmentDelegate) -> d
     boolean access$102(io.flutter.embedding.android.FlutterActivityAndFragmentDelegate,boolean) -> e
     boolean access$202(io.flutter.embedding.android.FlutterActivityAndFragmentDelegate,boolean) -> f
-    void delayFirstAndroidViewDraw(io.flutter.embedding.android.FlutterView) -> g
-    void doInitialFlutterViewRun() -> h
-    void ensureAlive() -> i
-    android.app.Activity getAppComponent() -> j
-    io.flutter.embedding.engine.FlutterEngine getFlutterEngine() -> k
-    boolean isAttached() -> l
-    boolean isFlutterEngineFromHost() -> m
-    java.lang.String maybeGetInitialRouteFromIntent(android.content.Intent) -> n
-    void onActivityResult(int,int,android.content.Intent) -> o
-    void onAttach(android.content.Context) -> p
-    void onBackPressed() -> q
-    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle,int,boolean) -> r
-    void onDestroyView() -> s
-    void onDetach() -> t
-    void onNewIntent(android.content.Intent) -> u
-    void onPause() -> v
-    void onPostResume() -> w
-    void onRequestPermissionsResult(int,java.lang.String[],int[]) -> x
-    void onRestoreInstanceState(android.os.Bundle) -> y
-    void onResume() -> z
+    io.flutter.embedding.engine.FlutterEngineGroup$Options addEntrypointOptions(io.flutter.embedding.engine.FlutterEngineGroup$Options) -> g
+    void delayFirstAndroidViewDraw(io.flutter.embedding.android.FlutterView) -> h
+    void doInitialFlutterViewRun() -> i
+    void ensureAlive() -> j
+    android.app.Activity getAppComponent() -> k
+    io.flutter.embedding.engine.FlutterEngine getFlutterEngine() -> l
+    boolean isAttached() -> m
+    boolean isFlutterEngineFromHost() -> n
+    java.lang.String maybeGetInitialRouteFromIntent(android.content.Intent) -> o
+    void onActivityResult(int,int,android.content.Intent) -> p
+    void onAttach(android.content.Context) -> q
+    void onBackPressed() -> r
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle,int,boolean) -> s
+    void onDestroyView() -> t
+    void onDetach() -> u
+    void onNewIntent(android.content.Intent) -> v
+    void onPause() -> w
+    void onPostResume() -> x
+    void onRequestPermissionsResult(int,java.lang.String[],int[]) -> y
+    void onRestoreInstanceState(android.os.Bundle) -> z
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$1 -> io.flutter.embedding.android.e$a:
     io.flutter.embedding.android.FlutterActivityAndFragmentDelegate this$0 -> a
     void onFlutterUiDisplayed() -> c
@@ -694,32 +697,33 @@ io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$2 -> io.flutter.
     io.flutter.embedding.android.FlutterView val$flutterView -> a
     io.flutter.embedding.android.FlutterActivityAndFragmentDelegate this$0 -> b
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host -> io.flutter.embedding.android.e$c:
-    java.lang.String getDartEntrypointLibraryUri() -> A
-    io.flutter.plugin.platform.PlatformPlugin providePlatformPlugin(android.app.Activity,io.flutter.embedding.engine.FlutterEngine) -> B
-    void onFlutterSurfaceViewCreated(io.flutter.embedding.android.FlutterSurfaceView) -> C
+    io.flutter.embedding.android.SplashScreen provideSplashScreen() -> A
+    java.lang.String getDartEntrypointLibraryUri() -> B
+    io.flutter.plugin.platform.PlatformPlugin providePlatformPlugin(android.app.Activity,io.flutter.embedding.engine.FlutterEngine) -> C
+    void onFlutterSurfaceViewCreated(io.flutter.embedding.android.FlutterSurfaceView) -> D
     void detachFromFlutterEngine() -> a
     void onFlutterUiDisplayed() -> c
     androidx.lifecycle.Lifecycle getLifecycle() -> d
     void onFlutterUiNoLongerDisplayed() -> e
     android.app.Activity getActivity() -> f
-    java.lang.String getInitialRoute() -> g
-    io.flutter.embedding.engine.FlutterShellArgs getFlutterShellArgs() -> h
-    java.lang.String getAppBundlePath() -> k
-    java.util.List getDartEntrypointArgs() -> l
-    io.flutter.embedding.engine.FlutterEngine provideFlutterEngine(android.content.Context) -> m
-    boolean shouldAttachEngineToActivity() -> n
-    io.flutter.embedding.android.RenderMode getRenderMode() -> o
-    boolean shouldDestroyEngineWithHost() -> p
-    boolean shouldHandleDeeplinking() -> q
-    io.flutter.embedding.android.TransparencyMode getTransparencyMode() -> r
-    boolean shouldDispatchAppLifecycleState() -> s
-    void onFlutterTextureViewCreated(io.flutter.embedding.android.FlutterTextureView) -> t
-    java.lang.String getCachedEngineId() -> u
-    void configureFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> v
-    boolean shouldRestoreAndSaveState() -> w
-    java.lang.String getDartEntrypointFunctionName() -> x
-    void cleanUpFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> y
-    io.flutter.embedding.android.SplashScreen provideSplashScreen() -> z
+    java.lang.String getCachedEngineGroupId() -> g
+    java.lang.String getInitialRoute() -> h
+    io.flutter.embedding.engine.FlutterShellArgs getFlutterShellArgs() -> i
+    java.lang.String getAppBundlePath() -> l
+    java.util.List getDartEntrypointArgs() -> m
+    io.flutter.embedding.engine.FlutterEngine provideFlutterEngine(android.content.Context) -> n
+    boolean shouldAttachEngineToActivity() -> o
+    io.flutter.embedding.android.RenderMode getRenderMode() -> p
+    boolean shouldDestroyEngineWithHost() -> q
+    boolean shouldHandleDeeplinking() -> r
+    io.flutter.embedding.android.TransparencyMode getTransparencyMode() -> s
+    boolean shouldDispatchAppLifecycleState() -> t
+    void onFlutterTextureViewCreated(io.flutter.embedding.android.FlutterTextureView) -> u
+    java.lang.String getCachedEngineId() -> v
+    void configureFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> w
+    boolean shouldRestoreAndSaveState() -> x
+    java.lang.String getDartEntrypointFunctionName() -> y
+    void cleanUpFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> z
 io.flutter.embedding.android.FlutterActivityLaunchConfigs$BackgroundMode -> io.flutter.embedding.android.f:
     io.flutter.embedding.android.FlutterActivityLaunchConfigs$BackgroundMode transparent -> e
     io.flutter.embedding.android.FlutterActivityLaunchConfigs$BackgroundMode[] $VALUES -> f
@@ -858,10 +862,12 @@ io.flutter.embedding.android.FlutterView -> io.flutter.embedding.android.k:
     boolean isFlutterUiDisplayed -> g
     io.flutter.embedding.engine.renderer.FlutterUiDisplayListener flutterUiDisplayListener -> v
     io.flutter.plugin.localization.LocalizationPlugin localizationPlugin -> m
-    void resetWillNotDraw(boolean,boolean) -> A
-    void revertImageView(java.lang.Runnable) -> B
-    void sendUserSettingsToFlutter() -> C
-    void sendViewportMetricsToFlutter() -> D
+    void removeFlutterEngineAttachmentListener(io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener) -> A
+    void removeOnFirstFrameRenderedListener(io.flutter.embedding.engine.renderer.FlutterUiDisplayListener) -> B
+    void resetWillNotDraw(boolean,boolean) -> C
+    void revertImageView(java.lang.Runnable) -> D
+    void sendUserSettingsToFlutter() -> E
+    void sendViewportMetricsToFlutter() -> F
     boolean onTextInputKeyEvent(android.view.KeyEvent) -> a
     android.view.PointerIcon getSystemPointerIcon(int) -> b
     void redispatch(android.view.KeyEvent) -> c
@@ -872,23 +878,23 @@ io.flutter.embedding.android.FlutterView -> io.flutter.embedding.android.k:
     boolean access$202(io.flutter.embedding.android.FlutterView,boolean) -> g
     java.util.Set access$300(io.flutter.embedding.android.FlutterView) -> h
     io.flutter.embedding.android.FlutterImageView access$400(io.flutter.embedding.android.FlutterView) -> i
-    boolean acquireLatestImageViewFrame() -> j
-    void addFlutterEngineAttachmentListener(io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener) -> k
-    void addOnFirstFrameRenderedListener(io.flutter.embedding.engine.renderer.FlutterUiDisplayListener) -> l
-    void attachOverlaySurfaceToRender(io.flutter.embedding.android.FlutterImageView) -> m
-    void attachToFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> n
-    io.flutter.embedding.android.FlutterView$ZeroSides calculateShouldZeroSides() -> o
-    void convertToImageView() -> p
-    io.flutter.embedding.android.FlutterImageView createImageView() -> q
-    io.flutter.embedding.android.WindowInfoRepositoryCallbackAdapterWrapper createWindowInfoRepo() -> r
-    void detachFromFlutterEngine() -> s
-    int guessBottomKeyboardInset(android.view.WindowInsets) -> t
-    boolean hasRenderedFirstFrame() -> u
-    void init() -> v
-    boolean isAttachedToFlutterEngine() -> w
-    boolean lambda$sendUserSettingsToFlutter$0(android.view.textservice.SpellCheckerInfo) -> x
-    void removeFlutterEngineAttachmentListener(io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener) -> y
-    void removeOnFirstFrameRenderedListener(io.flutter.embedding.engine.renderer.FlutterUiDisplayListener) -> z
+    void access$500(io.flutter.embedding.android.FlutterView) -> j
+    boolean acquireLatestImageViewFrame() -> k
+    void addFlutterEngineAttachmentListener(io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener) -> l
+    void addOnFirstFrameRenderedListener(io.flutter.embedding.engine.renderer.FlutterUiDisplayListener) -> m
+    void attachOverlaySurfaceToRender(io.flutter.embedding.android.FlutterImageView) -> n
+    void attachToFlutterEngine(io.flutter.embedding.engine.FlutterEngine) -> o
+    io.flutter.embedding.android.FlutterView$ZeroSides calculateShouldZeroSides() -> p
+    void convertToImageView() -> q
+    io.flutter.embedding.android.FlutterImageView createImageView() -> r
+    io.flutter.embedding.android.WindowInfoRepositoryCallbackAdapterWrapper createWindowInfoRepo() -> s
+    void detachFromFlutterEngine() -> t
+    int guessBottomKeyboardInset(android.view.WindowInsets) -> u
+    boolean hasRenderedFirstFrame() -> v
+    void init() -> w
+    boolean isAttachedToFlutterEngine() -> x
+    boolean lambda$sendUserSettingsToFlutter$0(android.view.textservice.SpellCheckerInfo) -> y
+    void releaseImageView() -> z
 io.flutter.embedding.android.FlutterView$$ExternalSyntheticLambda0 -> io.flutter.embedding.android.j:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
@@ -1122,24 +1128,26 @@ io.flutter.embedding.engine.FlutterEngine -> io.flutter.embedding.engine.a:
     java.util.Set access$000(io.flutter.embedding.engine.FlutterEngine) -> a
     io.flutter.plugin.platform.PlatformViewsController access$100(io.flutter.embedding.engine.FlutterEngine) -> b
     io.flutter.embedding.engine.systemchannels.RestorationChannel access$200(io.flutter.embedding.engine.FlutterEngine) -> c
-    void attachToJni() -> d
-    void destroy() -> e
-    io.flutter.embedding.engine.systemchannels.AccessibilityChannel getAccessibilityChannel() -> f
-    io.flutter.embedding.engine.plugins.activity.ActivityControlSurface getActivityControlSurface() -> g
-    io.flutter.embedding.engine.dart.DartExecutor getDartExecutor() -> h
-    io.flutter.embedding.engine.systemchannels.LifecycleChannel getLifecycleChannel() -> i
-    io.flutter.plugin.localization.LocalizationPlugin getLocalizationPlugin() -> j
-    io.flutter.embedding.engine.systemchannels.MouseCursorChannel getMouseCursorChannel() -> k
-    io.flutter.embedding.engine.systemchannels.NavigationChannel getNavigationChannel() -> l
-    io.flutter.embedding.engine.systemchannels.PlatformChannel getPlatformChannel() -> m
-    io.flutter.plugin.platform.PlatformViewsController getPlatformViewsController() -> n
-    io.flutter.embedding.engine.renderer.FlutterRenderer getRenderer() -> o
-    io.flutter.embedding.engine.systemchannels.RestorationChannel getRestorationChannel() -> p
-    io.flutter.embedding.engine.systemchannels.SettingsChannel getSettingsChannel() -> q
-    io.flutter.embedding.engine.systemchannels.SpellCheckChannel getSpellCheckChannel() -> r
-    io.flutter.embedding.engine.systemchannels.SystemChannel getSystemChannel() -> s
-    io.flutter.embedding.engine.systemchannels.TextInputChannel getTextInputChannel() -> t
-    boolean isAttachedToJni() -> u
+    void addEngineLifecycleListener(io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener) -> d
+    void attachToJni() -> e
+    void destroy() -> f
+    io.flutter.embedding.engine.systemchannels.AccessibilityChannel getAccessibilityChannel() -> g
+    io.flutter.embedding.engine.plugins.activity.ActivityControlSurface getActivityControlSurface() -> h
+    io.flutter.embedding.engine.dart.DartExecutor getDartExecutor() -> i
+    io.flutter.embedding.engine.systemchannels.LifecycleChannel getLifecycleChannel() -> j
+    io.flutter.plugin.localization.LocalizationPlugin getLocalizationPlugin() -> k
+    io.flutter.embedding.engine.systemchannels.MouseCursorChannel getMouseCursorChannel() -> l
+    io.flutter.embedding.engine.systemchannels.NavigationChannel getNavigationChannel() -> m
+    io.flutter.embedding.engine.systemchannels.PlatformChannel getPlatformChannel() -> n
+    io.flutter.plugin.platform.PlatformViewsController getPlatformViewsController() -> o
+    io.flutter.embedding.engine.renderer.FlutterRenderer getRenderer() -> p
+    io.flutter.embedding.engine.systemchannels.RestorationChannel getRestorationChannel() -> q
+    io.flutter.embedding.engine.systemchannels.SettingsChannel getSettingsChannel() -> r
+    io.flutter.embedding.engine.systemchannels.SpellCheckChannel getSpellCheckChannel() -> s
+    io.flutter.embedding.engine.systemchannels.SystemChannel getSystemChannel() -> t
+    io.flutter.embedding.engine.systemchannels.TextInputChannel getTextInputChannel() -> u
+    boolean isAttachedToJni() -> v
+    io.flutter.embedding.engine.FlutterEngine spawn(android.content.Context,io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint,java.lang.String,java.util.List,io.flutter.plugin.platform.PlatformViewsController,boolean,boolean) -> w
 io.flutter.embedding.engine.FlutterEngine$1 -> io.flutter.embedding.engine.a$a:
     io.flutter.embedding.engine.FlutterEngine this$0 -> a
     void onPreEngineRestart() -> a
@@ -1208,10 +1216,44 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivit
     void onRestoreInstanceState(android.os.Bundle) -> d
     void onSaveInstanceState(android.os.Bundle) -> e
     void onUserLeaveHint() -> f
+io.flutter.embedding.engine.FlutterEngineGroup -> io.flutter.embedding.engine.d:
+    java.util.List activeEngines -> a
+    io.flutter.embedding.engine.FlutterEngine createAndRunEngine(io.flutter.embedding.engine.FlutterEngineGroup$Options) -> a
+    io.flutter.embedding.engine.FlutterEngine createEngine(android.content.Context,io.flutter.plugin.platform.PlatformViewsController,boolean,boolean) -> b
+io.flutter.embedding.engine.FlutterEngineGroup$1 -> io.flutter.embedding.engine.d$a:
+    io.flutter.embedding.engine.FlutterEngineGroup this$0 -> b
+    io.flutter.embedding.engine.FlutterEngine val$engineToCleanUpOnDestroy -> a
+    void onPreEngineRestart() -> a
+    void onEngineWillDestroy() -> b
+io.flutter.embedding.engine.FlutterEngineGroup$Options -> io.flutter.embedding.engine.d$b:
+    android.content.Context context -> a
+    io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint dartEntrypoint -> b
+    java.util.List dartEntrypointArgs -> d
+    boolean automaticallyRegisterPlugins -> f
+    boolean waitForRestorationData -> g
+    java.lang.String initialRoute -> c
+    io.flutter.plugin.platform.PlatformViewsController platformViewsController -> e
+    boolean getAutomaticallyRegisterPlugins() -> a
+    android.content.Context getContext() -> b
+    io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint getDartEntrypoint() -> c
+    java.util.List getDartEntrypointArgs() -> d
+    java.lang.String getInitialRoute() -> e
+    io.flutter.plugin.platform.PlatformViewsController getPlatformViewsController() -> f
+    boolean getWaitForRestorationData() -> g
+    io.flutter.embedding.engine.FlutterEngineGroup$Options setAutomaticallyRegisterPlugins(boolean) -> h
+    io.flutter.embedding.engine.FlutterEngineGroup$Options setDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint) -> i
+    io.flutter.embedding.engine.FlutterEngineGroup$Options setDartEntrypointArgs(java.util.List) -> j
+    io.flutter.embedding.engine.FlutterEngineGroup$Options setInitialRoute(java.lang.String) -> k
+    io.flutter.embedding.engine.FlutterEngineGroup$Options setWaitForRestorationData(boolean) -> l
+io.flutter.embedding.engine.FlutterEngineGroupCache -> io.flutter.embedding.engine.e:
+    java.util.Map cachedEngineGroups -> a
+    io.flutter.embedding.engine.FlutterEngineGroupCache instance -> b
+    io.flutter.embedding.engine.FlutterEngineGroup get(java.lang.String) -> a
+    io.flutter.embedding.engine.FlutterEngineGroupCache getInstance() -> b
 io.flutter.embedding.engine.FlutterJNI -> io.flutter.embedding.engine.FlutterJNI:
     void $r8$lambda$2fUF03zsar2dpLbGJv6IUmJU-0A(long,android.graphics.ImageDecoder,android.graphics.ImageDecoder$ImageInfo,android.graphics.ImageDecoder$Source) -> a
       # {"id":"com.android.tools.r8.synthesized"}
-io.flutter.embedding.engine.FlutterJNI$$ExternalSyntheticLambda0 -> io.flutter.embedding.engine.d:
+io.flutter.embedding.engine.FlutterJNI$$ExternalSyntheticLambda0 -> io.flutter.embedding.engine.f:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     long io.flutter.embedding.engine.FlutterJNI$$InternalSyntheticLambda$0$2a5524ed219e708ff31c82ad8e0395d5d0898b08cb74f1a02a2f346a4db7f98c$0.f$0 -> a
@@ -1226,7 +1268,7 @@ io.flutter.embedding.engine.FlutterJNI$AsyncWaitForVsyncDelegate -> io.flutter.e
     void asyncWaitForVsync(long) -> a
 io.flutter.embedding.engine.FlutterJNI$Factory -> io.flutter.embedding.engine.FlutterJNI$c:
     io.flutter.embedding.engine.FlutterJNI provideFlutterJNI() -> a
-io.flutter.embedding.engine.FlutterShellArgs -> io.flutter.embedding.engine.e:
+io.flutter.embedding.engine.FlutterShellArgs -> io.flutter.embedding.engine.g:
     java.util.Set args -> a
     io.flutter.embedding.engine.FlutterShellArgs fromIntent(android.content.Intent) -> a
     java.lang.String[] toArray() -> b
@@ -1258,6 +1300,7 @@ io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint -> k.a$b:
     java.lang.String pathToBundle -> a
     java.lang.String dartEntrypointFunctionName -> c
     java.lang.String dartEntrypointLibrary -> b
+    io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint createDefault() -> a
 io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger -> k.a$c:
     io.flutter.embedding.engine.dart.DartMessenger messenger -> a
     void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue) -> b
@@ -1353,9 +1396,10 @@ io.flutter.embedding.engine.loader.FlutterLoader -> m.d:
     void ensureInitializationComplete(android.content.Context,java.lang.String[]) -> e
     java.lang.String findAppBundlePath() -> f
     io.flutter.embedding.engine.loader.ResourceExtractor initResources(android.content.Context) -> g
-    boolean isLeakVM(android.os.Bundle) -> h
-    void startInitialization(android.content.Context) -> i
-    void startInitialization(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader$Settings) -> j
+    boolean initialized() -> h
+    boolean isLeakVM(android.os.Bundle) -> i
+    void startInitialization(android.content.Context) -> j
+    void startInitialization(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader$Settings) -> k
 io.flutter.embedding.engine.loader.FlutterLoader$1 -> m.d$a:
     android.content.Context val$appContext -> a
     io.flutter.embedding.engine.loader.FlutterLoader this$0 -> b
@@ -1407,6 +1451,7 @@ io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding -> o.a$b:
     android.content.Context applicationContext -> a
     io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry -> e
     io.flutter.view.TextureRegistry textureRegistry -> d
+    io.flutter.embedding.engine.FlutterEngineGroup group -> g
     io.flutter.embedding.engine.FlutterEngine flutterEngine -> b
     io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets flutterAssets -> f
     io.flutter.plugin.common.BinaryMessenger binaryMessenger -> c
@@ -1615,7 +1660,7 @@ io.flutter.embedding.engine.systemchannels.NavigationChannel -> v.h:
     io.flutter.plugin.common.MethodChannel$MethodCallHandler defaultHandler -> b
     io.flutter.plugin.common.MethodChannel channel -> a
     void popRoute() -> a
-    void pushRoute(java.lang.String) -> b
+    void pushRouteInformation(java.lang.String) -> b
     void setInitialRoute(java.lang.String) -> c
 io.flutter.embedding.engine.systemchannels.NavigationChannel$1 -> v.h$a:
     io.flutter.embedding.engine.systemchannels.NavigationChannel this$0 -> a

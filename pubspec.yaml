@@ -67,6 +67,8 @@ flutter:
     - images/logo-open-ai1.png
     - images/ai.png
     - images/aiblack.png
+    - images/google.png
+    - images/github.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
