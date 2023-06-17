@@ -36,6 +36,10 @@ To setup the ChatGPT App, you will need to follow these steps:
 5. Run the app on an emulator or a physical device using `flutter run`.
 
 
+## Screenshots
+
+
+
 ## Contributing
 
 Contributions to the project are welcome! If you have any bug fixes, feature requests, or other contributions, please feel free to open a pull request or issue.
