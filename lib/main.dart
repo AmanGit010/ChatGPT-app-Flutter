@@ -1,35 +1,52 @@
 import 'package:chatgpt_app/Utils/Routes.dart';
-import 'package:chatgpt_app/const.dart';
-import 'package:chatgpt_app/screens/LoginScreen.dart';
+import 'package:chatgpt_app/providers/models_provider.dart';
+import 'package:chatgpt_app/screens/SignupScreen.dart';
 import 'package:chatgpt_app/screens/homePage.dart';
+import 'package:chatgpt_app/screens/loginScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'constants/constants.dart';
+import 'providers/chats_provider.dart';
+import 'screens/chat_screen.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(const MyApp());
 }
 
-class Myapp extends StatefulWidget {
-  const Myapp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  @override
-  State<Myapp> createState() => _MyappState();
-}
-
-class _MyappState extends State<Myapp> {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: scaffoldBackgroundColor,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => ModelsProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ChatProvider(),
+        ),
+      ],
+      child: MaterialApp(
+        title: 'ChatGPT',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            useMaterial3: true,
+            scaffoldBackgroundColor: scaffoldBackgroundColor,
+            appBarTheme: AppBarTheme(
+              color: cardColor,
+            )),
+        home: const ChatScreen(),
+        initialRoute: Routes.home,
+        routes: {
+          '/home': (context) => const HomePage(),
+          'login': (context) => const LoginScreen(),
+          '/signup': (context) => const SignupScreen(),
+          // '/chat': (context) => ChatScreen(),
+        },
       ),
-      initialRoute: Routes.home,
-      routes: {
-        '/home': (context) => HomePage(),
-        'login': (context) => LoginScreen(),
-        // '/chat': (context) => ChatScreen(),
-      },
-      home: const HomePage(),
     );
   }
 }
