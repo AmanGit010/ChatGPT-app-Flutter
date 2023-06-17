@@ -1,5 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:chatgpt_app/constants/constants.dart';
+import 'package:chatgpt_app/constants/const.dart';
 import 'package:chatgpt_app/services/assets_manager.dart';
 import 'package:flutter/material.dart';
 
