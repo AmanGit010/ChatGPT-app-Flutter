@@ -10,27 +10,37 @@ ChatGPT App is a mobile application created using Flutter that leverages OpenAI'
 
 ## Requirements
 
-- Flutter 2.0 or later
+- Flutter 3.0 or later
 - OpenAI API key
 - Android emulator/Physical device
 
-## Getting Started
 
-To get started with the ChatGPT App, you will need to follow these steps:
+## How to get your own OpenAI API Key
+You will need to follow these steps to generate your own OpenAI API Key: -
 
-1. Clone this repository to your local machine using `git clone https://github.com/<your-github-username>/chatgpt-app.git`.
-2. Navigate to the cloned repository using `cd chatgpt-app`.
-3. Install the necessary packages by running `flutter pub get`.
-4. Add your OpenAI API key to the `lib/services/openai_service.dart` file.
-5. Run the app on an emulator or physical device using `flutter run`.
+1. Visit https://openai.com/blog/openai-api.
+2. Log in or Sign up in to your account.
+3. Select the 3rd option or API option here. ![image](https://github.com/AmanGit010/ChatGPT-app-Flutter/assets/102356628/82b6ff70-c9e1-43a0-8771-f9017a6590a9)
+4. Click on your account and navigate to **View API Keys**.
+5. Click on **Create new Secret Key**.
+6. And Boom, your OpenAI API Key is generated successfully.
 
-## Usage
+## How to Setup project locally
+
+To setup the ChatGPT App, you will need to follow these steps:
+
+1. Fork this repository.
+2. Clone this repository to your local machine using `git clone https://github.com/AmanGit010/ChatGPT-app-Flutter.git`.
+3. Navigate to the cloned repository using `cd ChatGPT-app-Flutter`.
+4. Install the necessary packages by running `flutter pub get`.
+5. Add your OpenAI API key to the `lib/constants/api_consts.dart` file.
+6. Run the app on an emulator or a physical device using `flutter run`.
 
 
 ## Contributing
 
-Contributions to the ChatGPT App are welcome! If you have any bug fixes, feature requests, or other contributions, please feel free to open a pull request or issue.
+Contributions to the project are welcome! If you have any bug fixes, feature requests, or other contributions, please feel free to open a pull request or issue.
 
 ## License
 
-The ChatGPT App is licensed under the [MIT License](https://github.com/<your-github-username>/chatgpt-app/blob/main/LICENSE).
+The ChatGPT App is licensed under the [MIT License](https://github.com/AmanGit010/ChatGPT-app-Flutter/blob/main/LICENSE).
