@@ -1,16 +1,16 @@
 import 'package:chatgpt_app/constants/const.dart';
-import 'package:chatgpt_app/screens/SignupScreen.dart';
-import 'chat_screen.dart';
+import 'package:chatgpt_app/screens/chat_screen.dart';
+import 'package:chatgpt_app/screens/loginScreen.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<SignupScreen> createState() => _SignupScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,6 +89,44 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(
                         height: 10,
                       ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 18, left: 18),
+                        child: TextFormField(
+                          keyboardType: TextInputType.emailAddress,
+                          textInputAction: TextInputAction.next,
+                          obscureText: true,
+                          decoration: const InputDecoration(
+                            label: Text(
+                              "Username",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 18,
+                              ),
+                            ),
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.grey,
+                                width: 1,
+                              ),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.grey,
+                                width: 1,
+                              ),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.grey,
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
                       //Password textformfield
                       Padding(
                         padding: const EdgeInsets.only(right: 18, left: 18),
@@ -133,21 +171,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5)),
                     elevation: 10,
                     backgroundColor: green,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5)),
                     padding: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 155),
                   ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ChatScreen(),
-                      ),
-                    );
-                  },
+                  onPressed: () {},
                   child: const Text(
                     "Continue",
                     style: TextStyle(fontSize: 18, color: Colors.white),
@@ -159,17 +190,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text("Don't have an account? "),
+                    const Text("Already have an account? "),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const SignupScreen(),
-                            ));
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ));
                       },
                       child: Text(
-                        "Sign up",
+                        "Sign in",
                         style: TextStyle(
                             color: green, fontWeight: FontWeight.w700),
                       ),
@@ -217,12 +246,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                    elevation: 2,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5)),
-                    elevation: 2,
                     padding: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 60),
-                    backgroundColor: Color.fromARGB(255, 255, 255, 255),
+                    backgroundColor: Colors.white,
                   ),
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
