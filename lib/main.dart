@@ -5,10 +5,8 @@ import 'package:chatgpt_app/screens/homePage.dart';
 import 'package:chatgpt_app/screens/loginScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'constants/constants.dart';
+import 'constants/const.dart';
 import 'providers/chats_provider.dart';
-import 'screens/chat_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +36,7 @@ class MyApp extends StatelessWidget {
             appBarTheme: AppBarTheme(
               color: cardColor,
             )),
-        home: const ChatScreen(),
+        home: const HomePage(),
         initialRoute: Routes.home,
         routes: {
           '/home': (context) => const HomePage(),

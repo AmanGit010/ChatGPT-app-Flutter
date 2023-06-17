@@ -1,6 +1,5 @@
 import 'dart:developer';
-
-import 'package:chatgpt_app/constants/constants.dart';
+import 'package:chatgpt_app/constants/const.dart';
 import 'package:chatgpt_app/providers/chats_provider.dart';
 import 'package:chatgpt_app/services/services.dart';
 import 'package:chatgpt_app/widgets/chat_widget.dart';
