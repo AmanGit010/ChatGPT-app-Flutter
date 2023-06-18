@@ -44,6 +44,3 @@ To setup the ChatGPT App, you will need to follow these steps:
 
 Contributions to the project are welcome! If you have any bug fixes, feature requests, or other contributions, please feel free to open a pull request or issue.
 
-## License
-
-The ChatGPT App is licensed under the [MIT License](https://github.com/AmanGit010/ChatGPT-app-Flutter/blob/main/LICENSE).
