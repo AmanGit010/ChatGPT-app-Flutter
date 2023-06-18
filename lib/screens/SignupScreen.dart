@@ -24,7 +24,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 90),
                   child: Image.asset(
-                    'images/aiblack.png',
+                    'assets/images/aiblack.png',
                     height: 100,
                     width: 100,
                     scale: 5,
@@ -178,7 +178,14 @@ class _SignupScreenState extends State<SignupScreen> {
                     padding: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 155),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ChatScreen(),
+                      ),
+                    );
+                  },
                   child: const Text(
                     "Continue",
                     style: TextStyle(fontSize: 18, color: Colors.white),
@@ -193,9 +200,11 @@ class _SignupScreenState extends State<SignupScreen> {
                     const Text("Already have an account? "),
                     GestureDetector(
                       onTap: () {
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const LoginScreen(),
-                        ));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LoginScreen(),
+                            ));
                       },
                       child: Text(
                         "Sign in",
@@ -254,15 +263,17 @@ class _SignupScreenState extends State<SignupScreen> {
                     backgroundColor: Colors.white,
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const ChatScreen(),
-                    ));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ChatScreen(),
+                        ));
                   },
                   child: Wrap(
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Image.asset(
-                        "images/google.png",
+                        "assets/images/google.png",
                         // scale: 2,
                         width: 30,
                         height: 30,
@@ -294,7 +305,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Image.asset(
-                        "images/github.png",
+                        "assets/images/github.png",
                         // scale: 2,
                         width: 30,
                         height: 30,

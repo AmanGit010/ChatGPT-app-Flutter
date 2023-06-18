@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 90),
                   child: Image.asset(
-                    'images/aiblack.png',
+                    'assets/images/aiblack.png',
                     height: 100,
                     width: 100,
                     scale: 5,
@@ -233,7 +233,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Image.asset(
-                        "images/google.png",
+                        "assets/images/google.png",
                         // scale: 2,
                         width: 30,
                         height: 30,
@@ -265,7 +265,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     crossAxisAlignment: WrapCrossAlignment.center,
                     children: [
                       Image.asset(
-                        "images/github.png",
+                        "assets/images/github.png",
                         // scale: 2,
                         width: 30,
                         height: 30,
