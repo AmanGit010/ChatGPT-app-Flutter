@@ -14,14 +14,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "807735316754-uahomo4707kurc6afl4dgj9jrnctetc2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.chatgpt_app",
-            "certificate_hash": "87ba76611f5a828eebd5ba3f020ecda7e33855a0"
-          }
-        },
-        {
           "client_id": "807735316754-r774o4dvvqon2lm8jhrs99jmdctbh4su.apps.googleusercontent.com",
           "client_type": 3
         }
